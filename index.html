@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineKA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/cinema.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="./image/cinema.png" alt="Logo do CineKA"/>
+            <a class="menu-item" href="#" title="Filmes em cartaz">Em cartaz</a>
+            <a class="menu-item" href="#" title="Compra de ingressos">Ingressos</a>
+            <a class="menu-item" href="#" title="Em breve">Em breve</a>
+        <div class="busca">
+            <input type="text" id="input-busca" placeholder="Buscar filme..."/>
+            <button class="btn-busca">
+                <img class="lupa" src="./image/magnifying-glass.png" alt="lupa da busca">
+            </button>
+            </div>
+            </nav>
+    </header>
+    <main>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ps5CnqErnbA?si=L0LXUdDxtvt8z1bx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>Filmes em cartaz</h1>
+        <section id="galeria">
+            <articule class="film-item">
+                <img src="./image/2901026.jpg" alt="O rei leão" title="O rei leão">
+            </articule>
+            <articule class="film-item">
+                <img src="./image/84ispMxgLDRvQaA6zlM9i7sdAAI.jpg" alt="Aquaman 2" title="Aquaman 2">
+            </articule>
+        </section>
+        <section class="film-item">
+            <img src="./image/Hotel_Transylvania.jpg" alt="Hotel transilvânia" title="Hotel transilvânia">
+        </section>
+        <section class="film-item">
+            <img src="./image/postercriticathebatman.jpg" alt="The batman" title="The batman">
+        </section>
+        <section class="film-item">
+            <img src="./image/Zootopia.webp" alt="Zootopia" title="Zootopia">
+        </section>
+        <br><br><br><br><br><br>
+        <div class="imagem-final">
+        <img src="./image/cinema.png" alt="logo do CineKA">
+        <p>CineKA</p>
+        </div>
+    </main>
+    <!-- Conteúdo lateral secundário -->
+    <aside>
+        <h2>Ingressos <img src="./image/movie-ticket.png" alt="icon"></h2>
+        
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br><br>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf"><br><br>
+            <label for="telelefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" maxlength="11"><br><br>
+            <label for="quantidade">Quantidade de ingressos</label>
+            <input type="number" name="qtd" min="1"><br><br>
+            <label for="filme">Selecione o Filme:</label><br>
+            <select name="filme" id="filme">
+                <option value="Aquaman 2">Aquaman 2</option>
+                <option value="The batman">The batman</option>
+                <option value="O rei leão">O rei leão</option>
+                <option value="Zootopia">Zootopia</option>
+                <option value="Hotel transilvânia">Hotel transilvânia</option>
+            </select>
+            <br><br>
+            <label for="sala">Selecione a Sala:</label><br>
+            <select name="sala" id="sala">
+                <option label="Sala 1">Sala 1</option>
+                <option label="Sala 2">Sala 2</option>
+                <option label="Sala 3">Sala 3</option>
+                <option label="Sala 4">Sala 4</option>
+            </select>
+            <br>
+        <P>
+            <label for="msg">Algum erro ou dúvida? Fale conosco.</label><br>
+            <textarea name="msg" id="msg"></textarea>
+        </p>
+        <br><br>
+        <p>
+            <button type="submit">Comprar ingresso(s)</button>
+            <button type="reset">limpar</button>
+        </p>
+        </form>
+        <p><img src="./image/cinema.png" alt="logo CineKA">CineKA agradece a preferência!</p> <br><br>
+        <p>
+            <h3>Evite fila e reserve seu combo para a seção!</h3>
+            <form>
+            <label for="reserva">Faça aqui sua reserva:</label><br>
+            <h3>Pipoca salgada</h3>
+            <select name="reserva de pipoca" id="reserva-pipoca-salgada">
+                
+                <option label="Pipoca salgada tamanho pequeno">pipoca salgada tamanho pequeno</option>
+                <option label="Pipoca salgada tamanho médio">Pipoca salgada tamanho médio</option>
+                <option label="Pipoca salgada tamanho grande">Pipoca salgada tamanho grande</option>
+                <option label="Pipoca salgada no balde">Pipoca salgada no balde</option>
+            </select>
+            <h3>Pipoca doce</h3>
+            <select name="reserva de pipoca" id="reserva-pipoca-doce">
+                
+                <option label="Pipoca doce tamanho pequeno">pipoca doce tamanho pequeno</option>
+                <option label="Pipoca doce tamanho médio">Pipoca doce tamanho médio</option>
+                <option label="Pipoca doce tamanho grande">Pipoca doce tamanho grande</option>
+                <option label="Pipoca doce no balde">Pipoca doce no balde</option>
+            </select>
+            <h3>Refrgerante</h3>
+            <select name="reserva de refrigerante" id="reserva-refrigerante">
+                <option label="Coca-cola">Coca-cola</option>
+                <option label="Guaraná">Guaraná</option>
+            </select>
+            <h3>Selecione o copo</h3>
+            <select name="reserva de refrigerante" id="reserva-refrigerante">
+                
+                <option label="700ml">700ml</option>
+                <option label="500ml">500ml</option>
+                <option label="400ml">400ml</option>
+            </select><br><br>
+            <button>Reservar</button>
+            </form>
+        </p>
+        <p>
+            <h1>Tabela de preços</h1>
+            <p>Pipocas</p>
+            <table border="1px">
+                <thead>
+                    <th>Pequeno</th>
+                    <th>Médio</th>
+                    <th>Grande</th>
+                    <th>Balde</th>
+                </thead>
+                <td>R$40,00</td>
+                <td>R$55,00</td>
+                <td>R$70,00</td>
+                <td>R$90,00</td>
+            </table>  
+            <p>Refrigenrante</p>
+            <table border="1px">  
+                <thead>
+                    <th>700ml</th>
+                    <th>500ml</th>
+                    <th>400ml</th>
+                </thead>
+                <td>R$15,00</td>
+                <td>R$10,00</td>
+                <td>R$7,00</td>
+            </table>
+        </p>
+    </aside>
+    <footer>
+        &copy; 2023 CineKA
+    </footer>
+</body>
+</html>
